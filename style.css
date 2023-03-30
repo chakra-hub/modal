@@ -1,0 +1,72 @@
+.click-here{
+    background-color: coral;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+.click-here:hover{
+    background-color: #cccc;
+    cursor: pointer;
+}
+.modal{
+    display: none;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(0, 0, 0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    animation: modal-animate 0.5s ease-in-out;
+}
+@keyframes modal-animate {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.modal-content{
+    background-color: white;
+    margin: 20% auto;
+    width: 70%;
+    height: auto;
+    border-radius: 5px ;
+    box-shadow: 0 0 20px gray;
+}
+#cross{
+    
+    border: 0;
+    padding: 10px;
+    background-color: rgba(1, 1, 1, 0);
+}
+
+#cross:hover{
+    background-color: cccc;
+    border: 0;
+    cursor: pointer;
+}
+.cross-btn{
+    float: right;
+}
+.modal-header{
+    padding: 10px;
+    background-color: #cccc;
+    border-radius: 5px 5px 0 0 ;
+}
+.modal-body{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
+.modal-footer{
+    background-color: coral;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    color: white;
+}
